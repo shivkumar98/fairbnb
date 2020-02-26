@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+
+<title>Index Hosts</title>
+
+</head>
+<body>
+	<div>
+		<h2>Hosts</h2>
+		<table>
+			<thead>
+				<tr>
+					<th>Host ID</th>
+					<th>Contact ID</th>
+					<th>Name</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="host : ${hostAttr}">
+					<td th:text="${host.hostId}"></td>
+					<td th:text="${host.hostDetail.contactId}"></td>
+					<td th:text="${host.hostDetail.firstName} + ' ' + 
+					${host.hostDetail.lastName}"></td>
+				<td><a th:href="@{/edithost/{id}(id=${host.hostId})}">Edit</a></td>
+					<td><a th:href="@{/deletehost/{id}(id=${host.hostId})}">Delete</a></td> 
+					
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<br>
+	<p>
+		<a href="/hostsignup">Add a Host</a>
+		<a href="/">Home</a>
+	</p>
+</body>
+</html>

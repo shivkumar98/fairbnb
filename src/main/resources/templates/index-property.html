@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Index Property</title>
+</head>
+<body>
+
+	<div>
+		<h2>Property</h2>
+		<table>
+			<thead>
+				<tr>
+					<th>Property ID</th>
+					<th>Host</th>
+					<th>Location</th>
+					<th>Property Type</th>
+					<th>Nightly Rate</th>
+
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="property : ${propertyAttr}">
+					<td th:text="${property.propertyId}"></td>
+					<td th:text="${property.propertyHost.hostDetail.firstName} 
+					 + ' ' + ${property.propertyHost.hostDetail.lastName}"></td>
+					<td th:text="${property.propertyLocation.city}"></td>
+					<td th:text="${property.PropertyType.propertyTypeName}"></td>
+					<td th:text="${property.nightlyRate}"></td>
+					<td><a th:href="@{/editproperty/{id}(id=${property.propertyId})}">Edit</a></td>
+					<td><a th:href="@{/deleteproperty/{id}(id=${property.propertyId})}">Delete</a></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<br>
+	<p>
+		<a href="/propertysignup">Add a new Property Type</a>
+		<a href="/">Home</a>
+	</p>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Add a Reservation</title>
+</head>
+<body>
+
+	<div>
+		<form action="#" th:action="@{/addreservation}" th:object="${reservationAttr}" method="post">
+		
+		    <label for="customerReservation.customerId">Customer Name</label> 
+		    <select th:field="*{customerReservation.customerId}" 
+				id="customerReservation.customerId">
+				<option th:each="customer : ${customersAttr}"
+					th:value="${customer.customerId}"
+					th:text="${customer.customerDetail.firstName} + ' ' + ${customer.customerDetail.lastName} ">
+					</option>
+			</select>
+
+			
+			<span th:if="${#fields.hasErrors('customerReservation.customerId')}" 
+			th:errors="*{customerReservation.customerId}"></span> 
+			
+			<label for="reservationProperty.propertyId">Property ID</label> 
+			<select th:field="*{reservationProperty.propertyId}" id="reservationProperty.propertyId">
+				<option th:each="property : ${propertiesAttr}"
+					th:value="${property.propertyId}"
+					th:text="${property.propertyId}">
+			</select>
+			<span th:if="${#fields.hasErrors('reservationProperty.propertyId')}" th:errors="*{reservationProperty.propertyId}"></span> 
+
+			<label for="checkInDate">Check-In Date</label> 
+			<input type="text" th:field="*{checkInDate}" id="checkInDate" placeholder="Check-In Date">
+			<span th:if="${#fields.hasErrors('checkInDate')}" th:errors="*{checkInDate}"></span> 
+			
+			<label for="checkOutDate">Check-In Date</label> 
+			<input type="text" th:field="*{checkOutDate}" id="checkOutDate" placeholder="Check-Out Date">
+			<span th:if="${#fields.hasErrors('checkOutDate')}" th:errors="*{checkOutDate}"></span> 
+			
+			<input type="submit"
+				value="Add Reservation"></form>
+		<a href="/">Home</a>
+	</div>
+
+</body>
+</html>

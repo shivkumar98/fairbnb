@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Add Location</title>
+</head>
+<body>
+
+	<div>
+		<form action="#" th:action="@{/addlocation}" th:object="${locationAttr}" method="post">
+		
+			<label for="city">City</label> 
+			<input type="text" th:field="*{city}" id="city" placeholder="City">
+			<span th:if="${#fields.hasErrors('city')}" th:errors="*{city}"></span> 
+			
+			<label for="county">County</label> 
+			<input type="text" th:field="*{county}" id="county" placeholder="County">
+			<span th:if="${#fields.hasErrors('county')}" th:errors="*{county}"></span> 
+			
+			<input type="submit"
+				value="Add Location"></form>
+		<a href="/">Home</a>
+	</div>
+
+</body>
+</html>

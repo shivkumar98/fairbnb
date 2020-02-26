@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Index Location</title>
+</head>
+<body>
+
+	<div>
+		<h2>Location</h2>
+		<table>
+			<thead>
+				<tr>
+					<th>Location ID</th>
+					<th>City</th>
+					<th>County</th>
+
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="location : ${locationAttr}">
+					<td th:text="${location.locationId}"></td>
+					<td th:text="${location.city}"></td>
+					<td th:text="${location.county}"></td>
+					<td><a
+						th:href="@{/editlocation/{id}(id=${location.locationId})}">Edit</a></td>
+					<td><a
+						th:href="@{/deletelocation/{id}(id=${location.locationId})}">Delete</a></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<br>
+	<p>
+		<a href="/locationsignup">Add a new Property Type</a> <a href="/">Home</a>
+	</p>
+
+</body>
+</html>

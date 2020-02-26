@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+
+<title>Index Customer</title>
+
+
+</head>
+<body>
+
+	<div>
+		<h2>Customers</h2>
+		<table>
+			<thead>
+				<tr>
+					<th>Customer ID</th>
+					<th>Contact ID</th>
+					<th>Name
+
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="customer : ${customerAttr}">
+					<td th:text="${customer.customerId}"></td>
+					<td th:text="${customer.customerDetail.contactId}"></td>
+					<td th:text="${customer.customerDetail.firstName} + ' ' +
+					${customer.customerDetail.lastName}"></td>
+					<td><a th:href="@{/editcustomer/{id}(id=${customer.customerId})}">Edit</a></td>
+					<td><a th:href="@{/deletecustomer/{id}(id=${customer.customerId})}">Delete</a></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<br>
+	<p>
+		<a href="/customersignup">Add a Customer</a>
+		<a href="/">Home</a>
+	</p>
+
+</body>
+</html>

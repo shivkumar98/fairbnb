@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Add Host</title>
+</head>
+<body>
+
+	<div>
+		<form action="#" th:action="@{/addhost}" th:object="${hostAttr}" method="post">
+		
+			<label for="hostDetail.contactId">Contact ID</label> 
+			<select th:field="*{hostDetail.contactId}" id="hostDetail.contactId">
+				<option th:each="contactDetail : ${contactDetailsAttr}"
+					th:value="${contactDetail.contactId}"
+					th:text="${contactDetail.firstName} + ' ' + ${contactDetail.lastName} ">
+				</option>
+			</select> 
+			<span th:if="${#fields.hasErrors('hostDetail.contactId')}" th:errors="hostDetail.contactId"></span> 
+			
+			<input type="submit" value="Add Host"></form>
+		<a href="/">Home</a>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Update Property Type</title>
+</head>
+<body>
+
+<div>
+		<form action="#" th:action="@{/updatepropertytype/{id}(id=${propertyTypeAttr.propertyTypeId})}" th:object="${propertyTypeAttr}" method="post">
+			<label for="propertyTypeName">Property Type</label> 
+			<input type="text" th:field="*{propertyTypeName}" id="propertyTypeName" placeholder="Property Type">
+			<span th:if="${#fields.hasErrors('propertyTypeName')}" th:errors="*{propertyTypeName}"></span> 
+			<input type="submit" value="Update Property Type">
+		</form>
+		<a href="/">Home</a>
+	</div>
+
+</body>
+</html>

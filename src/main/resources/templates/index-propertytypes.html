@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+
+<title>Index Property Types</title>
+
+
+</head>
+<body>
+
+	<div>
+		<h2>Property Types</h2>
+		<table>
+			<thead>
+				<tr>
+					<th>Property Type ID</th>
+					<th>Property Types</th>
+
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="propertyType : ${propertyTypeAttr}">
+					<td th:text="${propertyType.propertyTypeId}"></td>
+					<td th:text="${propertyType.propertyTypeName}"></td>
+					<td><a th:href="@{/editpropertytype/{id}(id=${propertyType.propertyTypeId})}">Edit</a></td>
+					<td><a th:href="@{/deletepropertytype/{id}(id=${propertyType.propertyTypeId})}">Delete</a></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<br>
+	<p>
+		<a href="/propertytypesignup">Add a new Property Type</a>
+		<a href="/">Home</a>
+	</p>
+
+</body>
+</html>

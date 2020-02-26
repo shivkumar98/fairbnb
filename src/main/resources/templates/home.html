@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" style="font-size: 16px;">
+
+<head>
+   
+    <title>Home page</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/general.css}" media="screen"/>
+	<link rel="stylesheet" type="text/css" th:href="@{/css/home.css}" media="screen"/>
+    <link id="u-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:200,200i,300,300i,400,400i,600,600i,700,700i,900|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|titillium-Web">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<style>
+
+body {margin: 0;}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #ff5c33;}
+
+ul.topnav li a.active {background-color: #ff5c33;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+</style>
+
+</head>
+
+<body class="u-body">
+<ul class="topnav">
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="hostindex">Hosts</a></li>
+  <li><a href="customerindex">Customers</a></li>
+  <li><a href="contactindex">Contact details</a></li>
+  <li class="right"><a href="propertyindex">Properties</a></li>
+  <li class="right"><a href="propertytypeindex">Property Types</a></li>
+  <li class="right"><a href="reservationindex">Reservations</a></li>
+</ul>
+
+
+
+
+    <section class="u-clearfix u-grey-5 u-section-1" id="carousel_26ff">
+        <div class="u-clearfix u-sheet u-valign-top u-sheet-1">
+            <div class="u-container-style u-expanded-width-sm u-expanded-width-xs u-group u-image u-shading u-image-1" data-image-width="1280" data-image-height="800">
+                <div class="u-container-layout u-container-layout-1">
+                    <br>
+                
+                    <h2 class="u-align-center u-text u-text-white u-text-2"></h2>
+                </div>
+            </div>
+            <div class="u-clearfix u-gutter-20 u-layout-wrap u-layout-wrap-1">
+                <div class="u-layout">
+                    <div class="u-layout-row">
+                        <div class="u-container-style u-expand-resize u-layout-cell u-left-cell u-size-30 u-white u-layout-cell-1" src="">
+                            <div class="u-container-layout u-container-layout-2">
+                                <h5 class="u-align-center u-text u-text-3">Have a property that you would like to host? Become a part of our growing network across the U.K.</h5>
+                                <a href="hostsignup" class="u-border-none u-border-radius-8 u-btn u-btn-round u-button-style u-palette-2-base u-btn-1">HOST a property</a>
+                            </div>
+                        </div>
+                        <div class="u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-container-style u-layout-cell u-right-cell u-size-30 u-white u-layout-cell-2">
+                            <div class="u-container-layout u-container-layout-3">
+                                <h5 class="u-align-center u-text u-text-4">We have several properties across the U.K available. Stay with us.</h5>
+                                <a href="propertyindex" class="u-border-none u-border-radius-8 u-btn u-btn-round u-button-style u-palette-2-base u-btn-2">View Properties</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="u-clearfix u-grey-5 u-section-2" id="carousel_c062">
+        <div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-xl u-sheet-1">
+            <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+                <div class="u-layout">
+                    <div class="u-layout-row">
+                        <div class="u-align-center u-container-style u-layout-cell u-left-cell u-size-37 u-layout-cell-1">
+                            <div class="u-container-layout u-valign-right-lg u-valign-right-md u-valign-right-sm u-valign-right-xs u-container-layout-1">
+                                <h2 class="u-text u-text-1 align-right">We offer f-air BnB prices nationwide&nbsp;</h2>
+                                <h5 class="u-text u-text-2"> You've tried the "best" now here's the rest...</h5>
+                                <p class="u-text u-text-3">We headquartered in Birmingham, bringing over 12 weeks of local software development experience; with a reputation for delivering unique properties for BnB's.&nbsp; Our company has hosted properties for over four decades.
+                                    We now offer BnB's.&nbsp;</p>
+                                <a href="#" class="u-border-2 u-border-grey-dark-1 u-border-radius-0 u-btn u-btn-rectangle u-button-style u-btn-1">read more</a>
+                            </div>
+                        </div>
+                        <div class="u-container-style u-image u-layout-cell u-right-cell u-size-23 u-image-1">
+                            <div class="u-container-layout u-container-layout-2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="u-black u-clearfix u-section-3" id="carousel_8218">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <div class="u-container-style u-group u-group-1">
+                <div class="u-container-layout u-container-layout-1">
+                    <h5 class="u-align-center u-text u-text-1">Fair BnB</h5>
+                    <h2 class="u-align-center u-custom-font u-font-titillium-Web u-text u-text-2">Our properties</h2>
+                    <p class="u-align-center u-text u-text-3">We currently only offer BnB's across the U.K. Have a look below at the variety of property types we have. Keeps your eyes peeled for our ever expanding business.</p>
+                </div>
+            </div>
+            <div class="u-clearfix u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-layout-wrap u-layout-wrap-1">
+                <div class="u-layout">
+                    <div class="u-layout-col">
+                        <div class="u-size-30 u-size-60-md">
+                            <div class="u-layout-row">
+                                <div class="u-align-center u-container-style u-layout-cell u-left-cell u-size-20 u-size-20-md u-layout-cell-1">
+                                    <div class="u-container-layout u-valign-top u-container-layout-2">
+                                        <span class="u-icon u-icon-circle u-icon-1">
+                        <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 486.196 486.196" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-305c"></use></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="svg-305c" x="0px" y="0px" viewBox="0 0 486.196 486.196" style="enable-background:new 0 0 486.196 486.196;" xml:space="preserve" class="u-svg-content"><g><path d="M481.708,220.456l-228.8-204.6c-0.4-0.4-0.8-0.7-1.3-1c-5-4.8-13-5-18.3-0.3l-228.8,204.6c-5.6,5-6,13.5-1.1,19.1   c2.7,3,6.4,4.5,10.1,4.5c3.2,0,6.4-1.1,9-3.4l41.2-36.9v7.2v106.8v124.6c0,18.7,15.2,34,34,34c0.3,0,0.5,0,0.8,0s0.5,0,0.8,0h70.6   c17.6,0,31.9-14.3,31.9-31.9v-121.3c0-2.7,2.2-4.9,4.9-4.9h72.9c2.7,0,4.9,2.2,4.9,4.9v121.3c0,17.6,14.3,31.9,31.9,31.9h72.2   c19,0,34-18.7,34-42.6v-111.2v-34v-83.5l41.2,36.9c2.6,2.3,5.8,3.4,9,3.4c3.7,0,7.4-1.5,10.1-4.5   C487.708,233.956,487.208,225.456,481.708,220.456z M395.508,287.156v34v111.1c0,9.7-4.8,15.6-7,15.6h-72.2c-2.7,0-4.9-2.2-4.9-4.9   v-121.1c0-17.6-14.3-31.9-31.9-31.9h-72.9c-17.6,0-31.9,14.3-31.9,31.9v121.3c0,2.7-2.2,4.9-4.9,4.9h-70.6c-0.3,0-0.5,0-0.8,0   s-0.5,0-0.8,0c-3.8,0-7-3.1-7-7v-124.7v-106.8v-31.3l151.8-135.6l153.1,136.9L395.508,287.156L395.508,287.156z"></path>
+</g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                      </span>
+                                        <h2 class="u-custom-font u-font-titillium-Web u-text u-text-4">Houses</h2>
+                                        <p class="u-text u-text-5">We currently offer Detached, Semi-Detached, and Terraced houses across the nation at fair prices.</p>
+                                    </div>
+                                </div>
+                                <div class="u-align-center u-container-style u-layout-cell u-size-20 u-size-20-md u-layout-cell-2">
+                                    <div class="u-container-layout u-valign-top u-container-layout-3">
+                                        <span class="u-icon u-icon-circle u-icon-2">
+                        <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 392.408 392.408" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-9176"></use></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="svg-9176" x="0px" y="0px" viewBox="0 0 392.408 392.408" style="enable-background:new 0 0 392.408 392.408;" xml:space="preserve" class="u-svg-content"><g><polygon points="78.767,78.408 177.674,108.443 182.614,92.176 76.654,60 29.562,87.175 38.059,101.899  "></polygon><polygon points="78.767,108.408 177.674,138.443 182.614,122.176 76.654,90 29.562,117.175 38.059,131.899  "></polygon><polygon points="78.767,138.408 177.674,168.443 182.614,152.176 76.654,120 29.562,147.175 38.059,161.899  "></polygon><polygon points="78.767,168.408 177.674,198.443 182.614,182.176 76.654,150 29.562,177.175 38.059,191.899  "></polygon><polygon points="78.767,198.408 177.674,228.443 182.614,212.176 76.654,180 29.562,207.174 38.058,221.898  "></polygon><polygon points="78.767,228.408 177.674,258.443 182.614,242.176 76.654,210 29.562,237.174 38.058,251.898  "></polygon><polygon points="78.767,258.408 177.674,288.443 182.614,272.176 76.654,240 29.562,267.174 38.058,281.898  "></polygon><polygon points="78.767,288.408 177.674,318.443 182.614,302.176 76.654,270 29.562,297.174 38.058,311.898  "></polygon><polygon points="240.333,78.408 339.24,108.443 344.179,92.176 238.219,60 191.128,87.175 199.624,101.899  "></polygon><polygon points="240.333,48.408 339.24,78.443 344.179,62.176 238.219,30 191.128,57.175 199.624,71.899  "></polygon><polygon points="240.333,18.408 339.24,48.443 344.179,32.176 238.219,0 191.128,27.175 199.624,41.899  "></polygon><polygon points="240.333,108.408 339.24,138.443 344.179,122.176 238.219,90 191.128,117.175 199.624,131.899  "></polygon><polygon points="240.333,138.408 339.24,168.443 344.179,152.176 238.219,120 191.128,147.175 199.624,161.899  "></polygon><polygon points="240.333,168.408 339.24,198.443 344.179,182.176 238.219,150 191.128,177.175 199.624,191.899  "></polygon><polygon points="240.333,198.408 339.24,228.443 344.179,212.176 238.219,180 191.128,207.174 199.624,221.898  "></polygon><polygon points="240.333,228.408 339.24,258.443 344.179,242.176 238.219,210 191.128,237.174 199.624,251.898  "></polygon><polygon points="240.333,258.408 339.24,288.443 344.179,272.176 238.219,240 191.128,267.174 199.624,281.898  "></polygon><polygon points="240.333,288.408 339.24,318.443 344.179,302.176 238.219,270 191.128,297.174 199.624,311.898  "></polygon><path d="M339.423,376.149v-28.311l4.756-15.662L238.219,300l-47.092,27.174l4.756,8.241v40.734h-18.025v-28.311l4.756-15.662   L76.654,300l-47.092,27.174l4.755,8.241v40.734H9.204v16.259h374v-16.259H339.423z M101.087,376.149v-34.564l51.921,12.461v22.103   H101.087z M262.654,376.149v-34.564l51.92,12.461v22.103H262.654z"></path>
+</g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                      </span>
+                                        <h2 class="u-custom-font u-font-titillium-Web u-text u-text-6">Apartment</h2>
+                                        <p class="u-text u-text-7">Our Apartments range from high-end to comfortable studio spaces.&nbsp;</p>
+                                    </div>
+                                </div>
+                                <div class="u-container-style u-layout-cell u-right-cell u-size-20 u-size-20-md u-layout-cell-3">
+                                    <div class="u-container-layout u-valign-top u-container-layout-4">
+                                        <span class="u-icon u-icon-circle u-icon-3">
+                        <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-a23b"></use></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" id="svg-a23b" enable-background="new 0 0 512 512" viewBox="0 0 512 512" class="u-svg-content"><path d="m470 500v-60h16v-76h-16v-10h-12v10h-16v76h16v60h-36v-64h-32v-20h32v-44h-32v-20h32v-44h-32v-20h32v-44h-32v-20h32v-44h-32v-20h32v-44h-32v-20h32v-44h-64v-32h-48v-20h-108v20h-48v32h-64v44h32v20h-32v44h32v20h-32v44h32v20h-32v44h32v20h-32v44h32v20h-32v44h32v20h-32v64h-36v-60h16v-76h-16v-10h-12v10h-16v76h16v60h-42v12h512v-12zm4-124v20h-20v-20zm-20 32h20v20h-20zm-396-32v20h-20v-20zm-20 32h20v20h-20zm340 28h-20v-20h20zm-148-20v-16h20v36h-84v-20zm0-64v-16h20v52h-20v-16h-64v-20zm0-64v-16h20v52h-20v-16h-64v-20zm0-64v-16h20v52h-20v-16h-64v-20zm0-64v-16h20v52h-20v-16h-64v-20zm0-64v-16h20v52h-20v-16h-64v-20zm116 0v20h-64v16h-20v-52h20v16zm-64 84v16h-20v-52h20v16h64v20zm0 64v16h-20v-52h20v16h64v20zm0 64v16h-20v-52h20v16h64v20zm0 64v16h-20v-52h20v16h64v20zm-20 28h20v16h64v20h-84zm148 4h-116v-20h116zm-32-32h-20v-20h20zm32-32h-116v-20h116zm-32-32h-20v-20h20zm32-32h-116v-20h116zm-32-32h-20v-20h20zm32-32h-116v-20h116zm-32-32h-20v-20h20zm32-32h-116v-20h116zm-32-32h-20v-20h20zm32-32h-116v-20h116zm-64-52v20h-36v-20zm-48-20v40h-16v16h-52v-16h-16v-40zm-132 20h36v20h-36zm-64 32h116v20h-116zm32 32h20v20h-20zm-32 32h116v20h-116zm32 32h20v20h-20zm-32 32h116v20h-116zm32 32h20v20h-20zm-32 32h116v20h-116zm32 32h20v20h-20zm-32 32h116v20h-116zm32 32h20v20h-20zm-32 32h116v20h-116zm32 32h20v20h-20zm-32 32h308v52h-20v-32h-268v32h-20zm96 32h52v20h-52zm-12 20h-52v-20h52zm76-20h52v20h-52zm64 0h52v20h-52z"></path></svg>
+                      </span>
+                                        <h2 class="u-align-center u-custom-font u-font-titillium-Web u-text u-text-8">Flat</h2>
+                                        <p class="u-align-center u-text u-text-9">We cater for one person or whole families in our flats.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="u-size-30 u-size-60-md">
+                            <div class="u-layout-row">
+                                <div class="u-align-center u-container-style u-layout-cell u-left-cell u-size-20 u-size-20-md u-layout-cell-4">
+                                    <div class="u-container-layout u-valign-top u-container-layout-5">
+                                        <span class="u-icon u-icon-circle u-icon-4">
+                        <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 64 64" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-7846"></use></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" id="svg-7846" viewBox="0 0 64 64" class="u-svg-content"><path d="m61.31 30.05-40-13a1 1 0 0 0 -1.31.95v4a1 1 0 0 0 .69.95l3.31 1.05v22h-7a1 1 0 0 0 -1 1v14a1 1 0 0 0 1 1h40a1 1 0 0 0 1-1v-23.3a1 1 0 0 0 -2 0v22.3h-4v-8a1 1 0 0 0 -2 0v8h-8v-3a1 1 0 0 0 -2 0v3h-5v-3a1 1 0 0 0 -2 0v3h-3v-6a1 1 0 0 0 -2 0v6h-2v-35.32l10 3.25s0 .07 0 .07v4a1 1 0 0 0 2 0v-3.42l6 2v3.42a1 1 0 0 0 2 0v-2.82l6 2v3.82a1 1 0 0 0 2 0v-3.22l6.69 2.22a1.12 1.12 0 0 0 .31 0 1.06 1.06 0 0 0 .59-.19 1 1 0 0 0 .41-.81v-4a1 1 0 0 0 -.69-.95zm-43.31 24.95h2a1 1 0 0 0 0-2h-2v-5h2v2a1 1 0 0 0 2 0v-2h2v12h-2v-2a1 1 0 0 0 -2 0v2h-2zm42-21.38-38-12.35v-1.89l38 12.35z"></path><path d="m30 29a1 1 0 0 0 -2 0v4a1 1 0 0 0 2 0z"></path><path d="m29 44a1 1 0 0 0 -1 1v4a1 1 0 0 0 2 0v-4a1 1 0 0 0 -1-1z"></path><path d="m50 42v4a1 1 0 0 0 2 0v-4a1 1 0 0 0 -2 0z"></path><path d="m34 54h12a1 1 0 0 0 1-1v-11h1a1 1 0 0 0 1-1v-4a1 1 0 0 0 -1-1h-16a1 1 0 0 0 0 2h15v2h-15a1 1 0 0 0 0 2h1v11a1 1 0 0 0 1 1zm11-2h-4v-10h4zm-6-10v10h-4v-10z"></path><path d="m16.88 43.06a1 1 0 0 0 1 .94h.07a1 1 0 0 0 .93-1.06l-.46-7.38a8 8 0 0 0 2.58.44 1 1 0 0 0 0-2 6 6 0 0 1 -5.43-3.46 1 1 0 0 0 -1.85.1 5 5 0 1 1 -7.72-5.64 1 1 0 0 0 .4-.68 1 1 0 0 0 -.23-.76 9.5 9.5 0 1 1 16.54-8.32 1 1 0 0 0 1.94-.48 11.5 11.5 0 1 0 -20.6 9.29 7 7 0 0 0 .95 10.69v.26a9 9 0 0 0 4.15 7.56l-1.15 18.38a1 1 0 0 0 .94 1.06h.06a1 1 0 0 0 1-.94l1.6-25.57a7 7 0 0 0 3.15-2.49 8.07 8.07 0 0 0 1.59 1.5zm-7.58-2.89a7 7 0 0 1 -2.25-4.45 7 7 0 0 0 1.95.28h.56z"></path></svg>
+                      </span>
+                                        <h2 class="u-custom-font u-font-titillium-Web u-text u-text-10">Cottage</h2>
+                                        <p class="u-text u-text-11">Need a relaxing break in one of our rural retreat areas. Have a city break without the massive price tag.</p>
+                                    </div>
+                                </div>
+                                <div class="u-align-center u-container-style u-layout-cell u-size-20 u-size-20-md u-layout-cell-5">
+                                    <div class="u-container-layout u-valign-top u-container-layout-6">
+                                        <span class="u-icon u-icon-circle u-icon-5">
+                        <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 481.921 481.921" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-7d33"></use></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="svg-7d33" x="0px" y="0px" viewBox="0 0 481.921 481.921" style="enable-background:new 0 0 481.921 481.921;" xml:space="preserve" class="u-svg-content"><g><path d="M478.713,246.647L243.752,123.12c-1.748-0.919-3.836-0.919-5.584,0l-100.168,52.662v-30.351c0-3.313-2.687-6-6-6h-30   c-3.313,0-6,2.687-6,6v52.431L3.209,246.647c-2.443,1.284-3.694,4.069-3.033,6.749c0.662,2.679,3.065,4.562,5.825,4.562h50.1   v95.533c0,3.313,2.687,6,6,6h357.72c3.314,0,6-2.687,6-6v-95.533h50.1c2.76,0,5.164-1.883,5.825-4.562   C482.407,250.715,481.156,247.931,478.713,246.647z M108.001,151.431h18v30.659l-18,9.463V151.431z M413.821,347.49H68.101v-89.533   h345.72V347.49z M30.307,245.957L240.96,135.21l210.654,110.747H30.307z"></path><path d="M95.96,333.431h28c3.313,0,6-2.687,6-6v-54c0-3.313-2.687-6-6-6h-28c-3.313,0-6,2.687-6,6v54   C89.96,330.745,92.647,333.431,95.96,333.431z M101.96,279.431h16v42h-16V279.431z"></path><path d="M161.46,333.431h28c3.313,0,6-2.687,6-6v-54c0-3.313-2.687-6-6-6h-28c-3.313,0-6,2.687-6,6v54   C155.46,330.745,158.147,333.431,161.46,333.431z M167.46,279.431h16v42h-16V279.431z"></path><path d="M226.96,333.431h28c3.313,0,6-2.687,6-6v-54c0-3.313-2.687-6-6-6h-28c-3.313,0-6,2.687-6,6v54   C220.96,330.745,223.647,333.431,226.96,333.431z M232.96,279.431h16v42h-16V279.431z"></path><path d="M292.46,333.431h28c3.313,0,6-2.687,6-6v-54c0-3.313-2.687-6-6-6h-28c-3.313,0-6,2.687-6,6v54   C286.46,330.745,289.147,333.431,292.46,333.431z M298.46,279.431h16v42h-16V279.431z"></path><path d="M357.96,333.431h28c3.313,0,6-2.687,6-6v-54c0-3.313-2.687-6-6-6h-28c-3.313,0-6,2.687-6,6v54   C351.96,330.745,354.647,333.431,357.96,333.431z M363.96,279.431h16v42h-16V279.431z"></path>
+</g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                      </span>
+                                        <h2 class="u-custom-font u-font-titillium-Web u-text u-text-12">Bungalow</h2>
+                                        <p class="u-text u-text-13">Perfect for the eldery or disabled, we have all inclusive bungalows which take the hassle away from a city break.</p>
+                                    </div>
+                                </div>
+                                <div class="u-container-style u-layout-cell u-right-cell u-size-20 u-size-20-md u-layout-cell-6">
+                                    <div class="u-container-layout u-container-layout-7">
+                                        <span class="u-icon u-icon-circle u-icon-6">
+                        <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 912.1 912.1" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-6245"></use></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="svg-6245" x="0px" y="0px" viewBox="0 0 912.1 912.1" style="enable-background:new 0 0 912.1 912.1;" xml:space="preserve" class="u-svg-content"><g><g><path d="M504.607,574.9c102.8,0,186.4-83.601,186.4-186.4s-83.601-186.4-186.4-186.4c-102.799,0-186.4,83.6-186.4,186.4    S401.808,574.9,504.607,574.9z"></path><g><path d="M346.108,611.9c-71.8,0-130,58.199-130,130V887.1c0,13.801,11.2,25,25,25h527c13.8,0,25-11.199,25-25V745.5     c2.2-3.8,4.2-7.9,5.8-12.2l102-270c3.4-9,5.2-18.6,5.2-28.3V132c0-44.2-35.8-80-80-80s-80,35.8-80,80v288.4l-72.3,191.5H346.108z     "></path><path d="M30.808,178.1h59c12.4,0,22.9-9,24.7-21.2c3.4-22.2,10.3-38.6,20.5-48.5c9.5-9.2,22.6-13.7,40.2-13.7     c18.2,0,32.1,5,42.7,15.4c10.6,10.4,15.5,22.9,15.5,39.5c0,7.8-1.8,15-5.5,22c-1.9,3.5-9.3,14.3-37.5,38.2     c-26.2,22.2-43.9,43.1-54.2,63.8c-10.5,21.1-15.6,51.8-15.6,93.6l0,0c0,13.8,11.2,25,25,25h53.3c13.8,0,25-11.2,25-25l0,0     c0-32.3,3.9-45.5,6.2-50.5c1.8-4,9.3-15.8,39-40.4c27.6-22.9,46.2-43.8,56.8-63.8c10.9-20.5,16.4-43,16.4-66.8     c0-42.5-16.101-78-48-105.6c-30.8-26.6-71-40.1-119.5-40.1c-46.2,0-85.3,13.8-116,40.9c-31,27.4-48.7,64.5-52.7,110.2l0,0     C4.708,165.5,16.208,178.1,30.808,178.1z"></path><path d="M198.708,533.6c13.8,0,25-11.199,25-25V455.4c0-13.801-11.2-25-25-25h-53.2c-13.8,0-25,11.199-25,25V508.6     c0,13.801,11.2,25,25,25H198.708z"></path>
+</g>
+</g>
+</g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                      </span>
+                                        <p class="u-align-center u-text u-text-14">Want to find out more?
+                                            <br>See our current property types here:
+                                        </p>
+                                        <a href="#" class="u-btn u-button-style u-btn-1">Property types</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="u-black u-clearfix u-section-4" id="carousel_38e2">
+        <div class="u-container-style u-group u-similar-fill u-group-1">
+            <div class="u-container-layout u-container-layout-1">
+                <h5 class="u-align-center u-text u-text-1">Stay in style</h5>
+                <h2 class="u-align-center u-text u-text-2">Some of our Current BnB's</h2>
+            </div>
+        </div>
+        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+            <div class="u-gutter-0 u-layout">
+                <div class="u-layout-col">
+                    <div class="u-size-30">
+                        <div class="u-layout-row">
+                            <div class="u-container-style u-image u-layout-cell u-left-cell u-similar-fill u-size-15 u-size-30-md u-image-1">
+                                <div class="u-container-layout"></div>
+                            </div>
+                            <div class="u-container-style u-image u-layout-cell u-similar-fill u-size-15 u-size-30-md u-image-2">
+                                <div class="u-container-layout"></div>
+                            </div>
+                            <div class="u-container-style u-image u-layout-cell u-similar-fill u-size-15 u-size-30-md u-image-3">
+                                <div class="u-container-layout"></div>
+                            </div>
+                            <div class="u-container-style u-image u-layout-cell u-right-cell u-similar-fill u-size-15 u-size-30-md u-image-4">
+                                <div class="u-container-layout"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="u-size-30">
+                        <div class="u-layout-row">
+                            <div class="u-container-style u-image u-layout-cell u-left-cell u-similar-fill u-size-15 u-size-30-md u-image-5">
+                                <div class="u-container-layout"></div>
+                            </div>
+                            <div class="u-container-style u-image u-layout-cell u-similar-fill u-size-15 u-size-30-md u-image-6">
+                                <div class="u-container-layout"></div>
+                            </div>
+                            <div class="u-container-style u-image u-layout-cell u-size-15 u-size-30-md u-image-7">
+                                <div class="u-container-layout"></div>
+                            </div>
+                            <div class="u-container-style u-image u-layout-cell u-right-cell u-size-15 u-size-30-md u-image-8">
+                                <div class="u-container-layout"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="u-clearfix u-section-5" id="carousel_cbf1">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+                <div class="u-layout">
+                    <div class="u-layout-row">
+                        <div class="u-container-style u-expand-resize u-layout-cell u-left-cell u-similar-fill u-size-30 u-white u-layout-cell-1">
+                            <div class="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-xl u-valign-middle-xs u-container-layout-1">
+                                <img class="u-image u-image-contain u-image-1" src="images/9.jpg" data-image-width="1280" data-image-height="800">
+                            </div>
+                        </div>
+                        <div class="u-align-center u-container-style u-layout-cell u-right-cell u-similar-fill u-size-30 u-layout-cell-2">
+                            <div class="u-container-layout u-container-layout-2">
+                                <h2 class="u-text u-text-1">The Best BnB's in the U.K</h2>
+                                <p class="u-text u-text-font u-text-2">Come stay with us&nbsp;
+                                    <br>Why?
+                                    <br>Because we don't put designer price tags on state of the art stays.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="u-black u-clearfix u-section-6" id="carousel_3e9c">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <div class="u-clearfix u-disable-padding u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1">
+                <div class="u-layout">
+                    <div class="u-layout-row">
+                        <div class="u-align-center u-container-style u-layout-cell u-left-cell u-similar-fill u-size-30 u-layout-cell-1">
+                            <div class="u-container-layout u-valign-middle u-container-layout-1">
+                                <h6 class="u-text u-text-1">Contact us today if you have any queries</h6>
+                                <h5 class="u-text u-text-2">3 Brindley Place,&nbsp;
+                                    <br>Landmark, Birmingham
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="u-align-center u-container-style u-layout-cell u-right-cell u-size-30 u-layout-cell-2">
+                            <div class="u-container-layout u-valign-middle u-container-layout-2">
+                                <h2 class="u-text u-text-3">Contact Us</h2>
+                                <p class="u-text u-text-4">
+                                    <br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Telephone:&nbsp; &nbsp; 0121&nbsp; &nbsp;1234 5678&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                    &nbsp; &nbsp; &nbsp; &nbsp;
+                                    <br>&nbsp; &nbsp; Email:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; fairbnb@fdmgroup.com
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+  
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Update Host</title>
+</head>
+<body>
+
+<div>
+		<form action="#" th:action="@{/updatehost/{id}(id=${hostAttr.hostId})}" th:object="${hostAttr}" method="post">
+			<label for="hostDetail.contactId">Contact ID</label> 
+			<input type="text" th:field="*{hostDetail.contactId}" id="hostDetail.contactId" placeholder="Contact ID">
+			<span th:if="${#fields.hasErrors('hostDetail.contactId')}" th:errors="hostDetail.contactId"></span> 
+			
+			<input type="submit" value="Update Host">
+		</form>
+		<a href="/">Home</a>
+	</div>
+
+</body>
+</html>

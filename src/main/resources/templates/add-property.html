@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Add Property</title>
+</head>
+<body>
+
+<div>
+		<form action="#" th:action="@{/addproperty}" th:object="${propertyAttr}" method="post">
+		
+			<label for="propertyHost.hostId">Host Name</label> 
+			<select th:field="*{propertyHost.hostId}" id="propertyHost.hostId">
+				<option th:each="host: ${hosts}"
+					th:value="${host.hostId}"
+					th:text="${host.hostDetail.firstName} + ' ' +
+					${host.hostDetail.lastName}">				
+				</option>
+			</select>
+			<span th:if="${#fields.hasErrors('propertyHost.hostId')}" th:errors="*{propertyHost.hostId}"></span> 
+			
+			<label for="propertyLocation.locationId">Location</label> 
+			<select th:field="*{propertyLocation.locationId}" id="propertyLocation.locationId">
+				<option th:each="location: ${locations}"
+					th:value="${location.locationId}"
+					th:text="${location.city}">
+				</option>
+			</select>
+			<span th:if="${#fields.hasErrors('propertyLocation.locationId')}" th:errors="*{propertyLocation.locationId}"></span> 
+			 
+			<label for="propertyType.propertyTypeId">Property Type ID</label> 
+			<select th:field="*{propertyType.propertyTypeId}" id="propertyType.propertyTypeId">
+				<option th:each="propertyType: ${propertyTypes}"
+					th:value="${propertyType.propertyTypeId}"
+					th:text="${propertyType.propertyTypeName}">
+				</option>
+			</select>
+			<span th:if="${#fields.hasErrors('propertyType.propertyTypeId')}" th:errors="*{propertyType.propertyTypeId}"></span>  
+		
+			<label for="nightlyRate">Nightly Rate</label> 
+			<input type="text" th:field="*{nightlyRate}" id="nightlyRate" placeholder="Nightly Rate £">
+			<span th:if="${#fields.hasErrors('nightlyRate')}" th:errors="*{nightlyRate}"></span> 
+			
+			<input type="submit" value="Add Property Details"></form>
+			
+		<a href="/">Home</a>
+	</div>
+
+</body>
+</html>

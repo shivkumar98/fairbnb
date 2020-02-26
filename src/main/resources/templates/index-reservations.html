@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+
+<title>Reservations Index</title>
+
+</head>
+<body>
+	<div>
+		<h2>Reservations</h2>
+		<table>
+			<thead>
+				<tr>
+					<th>Reservation ID</th>
+					<th>Customer ID</th>
+					<th>Customer Name</th>
+					<th>Property ID</th>
+					<th>Check-In Date</th>
+					<th>Check-Out Date</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="reservation : ${reservationAttr}">
+					<td th:text="${reservation.reservationId}"></td>
+					<td th:text="${reservation.customerReservation.customerId}"></td>
+					<td th:text="${reservation.customerReservation.customerDetail.firstName}
+					+ ' ' + ${reservation.customerReservation.customerDetail.lastName}"></td> 
+					<td th:text="${reservation.reservationProperty.propertyId}"></td>
+					<td th:text="${reservation.checkInDate}"></td>
+					<td th:text="${reservation.checkOutDate}"></td>
+					<td><a th:href="@{/editreservation/{id}(id=${reservation.reservationId})}">Edit</a></td>
+					<td><a th:href="@{/deletereservation/{id}(id=${reservation.reservationId})}">Delete</a></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<br>
+	<p>
+		<a href="/reservationsignup">Add a Reservation</a>
+		<a href="/">Home</a>
+	</p>
+</body>
+</html>
